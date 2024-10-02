@@ -1,0 +1,87 @@
+<doctype html!>
+    <html>
+
+    <head>
+        <title>Fundraise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset utf="8">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="./js/getCategory.js"></script>
+        <script src="./js/getFundraiserList.js"></script>
+    </head>
+
+    <body>
+        <div class="header-nav">
+            <section>
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="inner">
+                            <ul class="nav navbar-nav float-nav nav-algn_r">
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="fundraise.html">Fundraiser</a></li>
+                            </ul>
+                            <div class="logo float-nav nav-algn_c">
+                                <h1><a href="index.html">GoFundMe</a></h1>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right float-nav nav-algn_l">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="login.html">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <div class="fundray">
+            <div class="container">
+                <div class="top-box">
+                    <div class="InputContainer">
+                        <input placeholder="Search.." id="input" class="input" name="text" type="text">
+                    </div>
+                    <div class="select-box">
+                        <div id="categoryBox" class="days-btn-container"></div>
+                    </div>
+                    <div class="select-box">
+                        <div id="cityBox" class="days-btn-container">
+                            <input class="day-btn" id="sunday" type="checkbox" />
+                            <label class="day-label" for="sunday">Portland, OR</label>
+
+                            <input class="day-btn" id="monday" type="checkbox" />
+                            <label class="day-label" for="monday">Concord, NC</label>
+
+                            <input class="day-btn" id="tuesday" type="checkbox" />
+                            <label class="day-label" for="tuesday">Macon, GA</label>
+
+                            <input class="day-btn" id="wednesday" type="checkbox" />
+                            <label class="day-label" for="wednesday">Mobile, AL</label>
+
+                            <input class="day-btn" id="thursday" type="checkbox" />
+                            <label class="day-label" for="thursday">Las Marías, PR</label>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <button id="searchBtn" class="button">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                            </svg>
+                            <div class="text">Search</div>
+                        </button>
+                        <button id="clearBtn" class="noselect">
+                            <span class="text">Clear</span>
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div id="card-outer" class="fundray-content">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
